@@ -10,7 +10,7 @@ URL=$3
 echo "Running polytomic importer"
 
 # Generate HCL from the app
-./polytomic-importer run \
+/polytomic-importer run \
     --api-key ${API_KEY} \
     --url ${URL} \
     --output ${DIR} \
