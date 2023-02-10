@@ -1,0 +1,22 @@
+# action.yml
+name: "Polytomic Terraform Sync"
+description: "Syncs polytomic resources into HCL"
+inputs:
+  api_key:
+    description: "Polytomic API key"
+    required: true
+  output_dir:
+    description: "Directory to output HCL files to"
+    required: false
+    default: "terraform"
+  url:
+    description: "URL to the polytomic API"
+    required: false
+    default: "https://api.polytomic.com"
+runs:
+  using: "docker"
+  image: "Dockerfile"
+  args:
+    - ${{ inputs.api_key }}
+    - ${{ inputs.output_dir }}
+    - ${{ inputs.url }}
