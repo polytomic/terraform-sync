@@ -13,8 +13,8 @@ RUN apk add --no-cache \
     https://github.com/polytomic/terraform-provider-polytomic/releases/download/v${POLYTOMIC_IMPORTER_VERSION}/polytomic_importer_${POLYTOMIC_IMPORTER_VERSION}_${TARGETOS}_${TARGETARCH}.zip \
     && unzip -p \
     polytomic-importer.zip  \
-    polytomic_importer_v${POLYTOMIC_IMPORTER_VERSION} > polytomic-importer \
-    && chmod +x polytomic-importer 
+    polytomic_importer_v${POLYTOMIC_IMPORTER_VERSION} > /polytomic-importer \
+    && chmod +x /polytomic-importer 
 
 # Copies your code file  repository to the filesystem
 COPY entrypoint.sh /entrypoint.sh
