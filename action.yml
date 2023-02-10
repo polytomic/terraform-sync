@@ -12,7 +12,7 @@ inputs:
   url:
     description: "URL to the polytomic API"
     required: false
-    default: "https://api.polytomic.com"
+    default: "app.polytomic.com"
 runs:
   using: "docker"
   image: "Dockerfile"
