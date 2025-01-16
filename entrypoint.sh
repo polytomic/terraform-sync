@@ -7,7 +7,7 @@ DIR=$2
 URL=$3
 
 # Run the polytomic importer
-echo "Running polytomic importer"
+echo "Running Polytomic importer"
 
 # Generate HCL from the app
 /polytomic-importer run \
