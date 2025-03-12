@@ -3,7 +3,7 @@ FROM alpine:latest
 
 ARG TARGETARCH=amd64
 ARG TARGETOS=linux
-ARG POLYTOMIC_IMPORTER_VERSION=1.0.0-beta3
+ARG POLYTOMIC_IMPORTER_VERSION=1.0.0-beta4
 
 RUN apk add --no-cache \
     bash \
