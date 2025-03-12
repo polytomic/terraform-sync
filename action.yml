@@ -1,6 +1,6 @@
 # action.yml
 name: "Polytomic Terraform Sync"
-description: "Syncs Polytomic resources to HCL"
+description: "Generates Terraform HCL from Polytomic."
 branding:
   icon: "archive"
   color: "purple"
