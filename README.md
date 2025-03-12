@@ -39,7 +39,9 @@ jobs:
 
 The following arguments are supported:
 
-- `api_key`: The Polytomic API key to use when exporting resources (required).
+- `api_key`: The [Polytomic API
+  key](https://apidocs.polytomic.com/2024-02-08/guides/obtaining-api-keys) to
+  use when exporting resources (required).
 - `output_dir`: The output directly to write to; defaults to `terraform`.
 - `url`: The URL of the Polytomic deployment to sync from; defaults to
   `https://app.polytomic.com`.
